@@ -15,6 +15,11 @@
 		EC25E2242D0B7A58008451C9 /* BelezixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25E2232D0B7A58008451C9 /* BelezixUITests.swift */; };
 		EC25E2262D0B7A58008451C9 /* BelezixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25E2252D0B7A58008451C9 /* BelezixUITestsLaunchTests.swift */; };
 		EC3D0C112D10573000A75663 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3D0C102D10573000A75663 /* FlowCoordinator.swift */; };
+		ECF5E06A2D106609006DFA0E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E0692D106609006DFA0E /* Colors.swift */; };
+		ECF5E06C2D10662F006DFA0E /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E06B2D10662F006DFA0E /* Typography.swift */; };
+		ECF5E06F2D1066AD006DFA0E /* BelezixFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E06E2D1066AD006DFA0E /* BelezixFlowController.swift */; };
+		ECF5E0732D10684F006DFA0E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E0722D10684F006DFA0E /* SplashViewController.swift */; };
+		ECF5E0752D106892006DFA0E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E0742D106892006DFA0E /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		EC25E2232D0B7A58008451C9 /* BelezixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelezixUITests.swift; sourceTree = "<group>"; };
 		EC25E2252D0B7A58008451C9 /* BelezixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelezixUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EC3D0C102D10573000A75663 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		ECF5E0692D106609006DFA0E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		ECF5E06B2D10662F006DFA0E /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		ECF5E06E2D1066AD006DFA0E /* BelezixFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelezixFlowController.swift; sourceTree = "<group>"; };
+		ECF5E0722D10684F006DFA0E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		ECF5E0742D106892006DFA0E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +147,8 @@
 		ECF5E0662D106567006DFA0E /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				ECF5E0692D106609006DFA0E /* Colors.swift */,
+				ECF5E06B2D10662F006DFA0E /* Typography.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -144,6 +156,8 @@
 		ECF5E0672D10656F006DFA0E /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				ECF5E0702D106834006DFA0E /* Scenes */,
+				ECF5E06D2D106696006DFA0E /* Coordinator */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -154,6 +168,31 @@
 				EC25E20B2D0B7A58008451C9 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		ECF5E06D2D106696006DFA0E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				ECF5E06E2D1066AD006DFA0E /* BelezixFlowController.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		ECF5E0702D106834006DFA0E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				ECF5E0712D10683A006DFA0E /* Splash */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		ECF5E0712D10683A006DFA0E /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				ECF5E0722D10684F006DFA0E /* SplashViewController.swift */,
+				ECF5E0742D106892006DFA0E /* SplashView.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,9 +325,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC3D0C112D10573000A75663 /* FlowCoordinator.swift in Sources */,
+				ECF5E06A2D106609006DFA0E /* Colors.swift in Sources */,
 				EC25E2072D0B7A56008451C9 /* ViewController.swift in Sources */,
+				ECF5E06F2D1066AD006DFA0E /* BelezixFlowController.swift in Sources */,
 				EC25E2032D0B7A56008451C9 /* AppDelegate.swift in Sources */,
+				ECF5E06C2D10662F006DFA0E /* Typography.swift in Sources */,
 				EC25E2052D0B7A56008451C9 /* SceneDelegate.swift in Sources */,
+				ECF5E0732D10684F006DFA0E /* SplashViewController.swift in Sources */,
+				ECF5E0752D106892006DFA0E /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
