@@ -15,11 +15,16 @@
 		EC25E2242D0B7A58008451C9 /* BelezixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25E2232D0B7A58008451C9 /* BelezixUITests.swift */; };
 		EC25E2262D0B7A58008451C9 /* BelezixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25E2252D0B7A58008451C9 /* BelezixUITestsLaunchTests.swift */; };
 		EC3D0C112D10573000A75663 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3D0C102D10573000A75663 /* FlowCoordinator.swift */; };
+		ECBD059A2D10C26E008D814F /* UiViewControler+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD05992D10C26E008D814F /* UiViewControler+ext.swift */; };
+		ECBD059C2D10C381008D814F /* SplashFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD059B2D10C381008D814F /* SplashFlowDelegate.swift */; };
 		ECF5E06A2D106609006DFA0E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E0692D106609006DFA0E /* Colors.swift */; };
 		ECF5E06C2D10662F006DFA0E /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E06B2D10662F006DFA0E /* Typography.swift */; };
 		ECF5E06F2D1066AD006DFA0E /* BelezixFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E06E2D1066AD006DFA0E /* BelezixFlowController.swift */; };
 		ECF5E0732D10684F006DFA0E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E0722D10684F006DFA0E /* SplashViewController.swift */; };
 		ECF5E0752D106892006DFA0E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E0742D106892006DFA0E /* SplashView.swift */; };
+		ECF5E0782D10A750006DFA0E /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E0772D10A750006DFA0E /* TipsView.swift */; };
+		ECF5E07B2D10AD50006DFA0E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E07A2D10AD50006DFA0E /* WelcomeView.swift */; };
+		ECF5E07D2D10B1CC006DFA0E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E07C2D10B1CC006DFA0E /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +57,16 @@
 		EC25E2232D0B7A58008451C9 /* BelezixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelezixUITests.swift; sourceTree = "<group>"; };
 		EC25E2252D0B7A58008451C9 /* BelezixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelezixUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EC3D0C102D10573000A75663 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		ECBD05992D10C26E008D814F /* UiViewControler+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewControler+ext.swift"; sourceTree = "<group>"; };
+		ECBD059B2D10C381008D814F /* SplashFlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFlowDelegate.swift; sourceTree = "<group>"; };
 		ECF5E0692D106609006DFA0E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		ECF5E06B2D10662F006DFA0E /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		ECF5E06E2D1066AD006DFA0E /* BelezixFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelezixFlowController.swift; sourceTree = "<group>"; };
 		ECF5E0722D10684F006DFA0E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		ECF5E0742D106892006DFA0E /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		ECF5E0772D10A750006DFA0E /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
+		ECF5E07A2D10AD50006DFA0E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		ECF5E07C2D10B1CC006DFA0E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +154,14 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		ECBD05982D10C251008D814F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD05992D10C26E008D814F /* UiViewControler+ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		ECF5E0662D106567006DFA0E /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +174,8 @@
 		ECF5E0672D10656F006DFA0E /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				ECBD05982D10C251008D814F /* Extensions */,
+				ECF5E0762D10A732006DFA0E /* Components */,
 				ECF5E0702D106834006DFA0E /* Scenes */,
 				ECF5E06D2D106696006DFA0E /* Coordinator */,
 			);
@@ -181,6 +201,7 @@
 		ECF5E0702D106834006DFA0E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				ECF5E0792D10AD40006DFA0E /* WelcomeView */,
 				ECF5E0712D10683A006DFA0E /* Splash */,
 			);
 			path = Scenes;
@@ -191,8 +212,26 @@
 			children = (
 				ECF5E0722D10684F006DFA0E /* SplashViewController.swift */,
 				ECF5E0742D106892006DFA0E /* SplashView.swift */,
+				ECBD059B2D10C381008D814F /* SplashFlowDelegate.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		ECF5E0762D10A732006DFA0E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ECF5E0772D10A750006DFA0E /* TipsView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		ECF5E0792D10AD40006DFA0E /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				ECF5E07A2D10AD50006DFA0E /* WelcomeView.swift */,
+				ECF5E07C2D10B1CC006DFA0E /* WelcomeViewController.swift */,
+			);
+			path = WelcomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,15 +363,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF5E0782D10A750006DFA0E /* TipsView.swift in Sources */,
 				EC3D0C112D10573000A75663 /* FlowCoordinator.swift in Sources */,
 				ECF5E06A2D106609006DFA0E /* Colors.swift in Sources */,
 				EC25E2072D0B7A56008451C9 /* ViewController.swift in Sources */,
 				ECF5E06F2D1066AD006DFA0E /* BelezixFlowController.swift in Sources */,
 				EC25E2032D0B7A56008451C9 /* AppDelegate.swift in Sources */,
+				ECF5E07B2D10AD50006DFA0E /* WelcomeView.swift in Sources */,
 				ECF5E06C2D10662F006DFA0E /* Typography.swift in Sources */,
 				EC25E2052D0B7A56008451C9 /* SceneDelegate.swift in Sources */,
+				ECF5E07D2D10B1CC006DFA0E /* WelcomeViewController.swift in Sources */,
+				ECBD059A2D10C26E008D814F /* UiViewControler+ext.swift in Sources */,
 				ECF5E0732D10684F006DFA0E /* SplashViewController.swift in Sources */,
 				ECF5E0752D106892006DFA0E /* SplashView.swift in Sources */,
+				ECBD059C2D10C381008D814F /* SplashFlowDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
