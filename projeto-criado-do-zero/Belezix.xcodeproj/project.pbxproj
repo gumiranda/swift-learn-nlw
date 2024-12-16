@@ -97,11 +97,11 @@
 		EC25E2012D0B7A56008451C9 /* Belezix */ = {
 			isa = PBXGroup;
 			children = (
+				ECF5E0682D1065C2006DFA0E /* Resources */,
 				EC3D0C0F2D1056EB00A75663 /* Sources */,
 				EC25E2022D0B7A56008451C9 /* AppDelegate.swift */,
 				EC25E2042D0B7A56008451C9 /* SceneDelegate.swift */,
 				EC25E2062D0B7A56008451C9 /* ViewController.swift */,
-				EC25E20B2D0B7A58008451C9 /* Assets.xcassets */,
 				EC25E2102D0B7A58008451C9 /* Info.plist */,
 			);
 			path = Belezix;
@@ -127,9 +127,33 @@
 		EC3D0C0F2D1056EB00A75663 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				ECF5E0672D10656F006DFA0E /* Features */,
+				ECF5E0662D106567006DFA0E /* Constants */,
 				EC3D0C102D10573000A75663 /* FlowCoordinator.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		ECF5E0662D106567006DFA0E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		ECF5E0672D10656F006DFA0E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		ECF5E0682D1065C2006DFA0E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC25E20B2D0B7A58008451C9 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
