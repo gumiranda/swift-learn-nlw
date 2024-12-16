@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC25E2032D0B7A56008451C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25E2022D0B7A56008451C9 /* AppDelegate.swift */; };
+		EC25E2052D0B7A56008451C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25E2042D0B7A56008451C9 /* SceneDelegate.swift */; };
+		EC25E2072D0B7A56008451C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25E2062D0B7A56008451C9 /* ViewController.swift */; };
+		EC25E20C2D0B7A58008451C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC25E20B2D0B7A58008451C9 /* Assets.xcassets */; };
+		EC25E21A2D0B7A58008451C9 /* BelezixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25E2192D0B7A58008451C9 /* BelezixTests.swift */; };
+		EC25E2242D0B7A58008451C9 /* BelezixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25E2232D0B7A58008451C9 /* BelezixUITests.swift */; };
+		EC25E2262D0B7A58008451C9 /* BelezixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25E2252D0B7A58008451C9 /* BelezixUITestsLaunchTests.swift */; };
+		EC3D0C112D10573000A75663 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3D0C102D10573000A75663 /* FlowCoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC25E2162D0B7A58008451C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC25E1F72D0B7A56008451C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC25E1FE2D0B7A56008451C9;
+			remoteInfo = Belezix;
+		};
+		EC25E2202D0B7A58008451C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC25E1F72D0B7A56008451C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC25E1FE2D0B7A56008451C9;
+			remoteInfo = Belezix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC25E1FF2D0B7A56008451C9 /* Belezix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Belezix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC25E2022D0B7A56008451C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC25E2042D0B7A56008451C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EC25E2062D0B7A56008451C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC25E20B2D0B7A58008451C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC25E2102D0B7A58008451C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC25E2152D0B7A58008451C9 /* BelezixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BelezixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC25E2192D0B7A58008451C9 /* BelezixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelezixTests.swift; sourceTree = "<group>"; };
+		EC25E21F2D0B7A58008451C9 /* BelezixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BelezixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC25E2232D0B7A58008451C9 /* BelezixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelezixUITests.swift; sourceTree = "<group>"; };
+		EC25E2252D0B7A58008451C9 /* BelezixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelezixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EC3D0C102D10573000A75663 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC25E1FC2D0B7A56008451C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC25E2122D0B7A58008451C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC25E21C2D0B7A58008451C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC25E1F62D0B7A56008451C9 = {
+			isa = PBXGroup;
+			children = (
+				EC25E2012D0B7A56008451C9 /* Belezix */,
+				EC25E2182D0B7A58008451C9 /* BelezixTests */,
+				EC25E2222D0B7A58008451C9 /* BelezixUITests */,
+				EC25E2002D0B7A56008451C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC25E2002D0B7A56008451C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC25E1FF2D0B7A56008451C9 /* Belezix.app */,
+				EC25E2152D0B7A58008451C9 /* BelezixTests.xctest */,
+				EC25E21F2D0B7A58008451C9 /* BelezixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC25E2012D0B7A56008451C9 /* Belezix */ = {
+			isa = PBXGroup;
+			children = (
+				EC3D0C0F2D1056EB00A75663 /* Sources */,
+				EC25E2022D0B7A56008451C9 /* AppDelegate.swift */,
+				EC25E2042D0B7A56008451C9 /* SceneDelegate.swift */,
+				EC25E2062D0B7A56008451C9 /* ViewController.swift */,
+				EC25E20B2D0B7A58008451C9 /* Assets.xcassets */,
+				EC25E2102D0B7A58008451C9 /* Info.plist */,
+			);
+			path = Belezix;
+			sourceTree = "<group>";
+		};
+		EC25E2182D0B7A58008451C9 /* BelezixTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC25E2192D0B7A58008451C9 /* BelezixTests.swift */,
+			);
+			path = BelezixTests;
+			sourceTree = "<group>";
+		};
+		EC25E2222D0B7A58008451C9 /* BelezixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC25E2232D0B7A58008451C9 /* BelezixUITests.swift */,
+				EC25E2252D0B7A58008451C9 /* BelezixUITestsLaunchTests.swift */,
+			);
+			path = BelezixUITests;
+			sourceTree = "<group>";
+		};
+		EC3D0C0F2D1056EB00A75663 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EC3D0C102D10573000A75663 /* FlowCoordinator.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC25E1FE2D0B7A56008451C9 /* Belezix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC25E2292D0B7A58008451C9 /* Build configuration list for PBXNativeTarget "Belezix" */;
+			buildPhases = (
+				EC25E1FB2D0B7A56008451C9 /* Sources */,
+				EC25E1FC2D0B7A56008451C9 /* Frameworks */,
+				EC25E1FD2D0B7A56008451C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Belezix;
+			productName = Belezix;
+			productReference = EC25E1FF2D0B7A56008451C9 /* Belezix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC25E2142D0B7A58008451C9 /* BelezixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC25E22C2D0B7A58008451C9 /* Build configuration list for PBXNativeTarget "BelezixTests" */;
+			buildPhases = (
+				EC25E2112D0B7A58008451C9 /* Sources */,
+				EC25E2122D0B7A58008451C9 /* Frameworks */,
+				EC25E2132D0B7A58008451C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC25E2172D0B7A58008451C9 /* PBXTargetDependency */,
+			);
+			name = BelezixTests;
+			productName = BelezixTests;
+			productReference = EC25E2152D0B7A58008451C9 /* BelezixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC25E21E2D0B7A58008451C9 /* BelezixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC25E22F2D0B7A58008451C9 /* Build configuration list for PBXNativeTarget "BelezixUITests" */;
+			buildPhases = (
+				EC25E21B2D0B7A58008451C9 /* Sources */,
+				EC25E21C2D0B7A58008451C9 /* Frameworks */,
+				EC25E21D2D0B7A58008451C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC25E2212D0B7A58008451C9 /* PBXTargetDependency */,
+			);
+			name = BelezixUITests;
+			productName = BelezixUITests;
+			productReference = EC25E21F2D0B7A58008451C9 /* BelezixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC25E1F72D0B7A56008451C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					EC25E1FE2D0B7A56008451C9 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					EC25E2142D0B7A58008451C9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = EC25E1FE2D0B7A56008451C9;
+					};
+					EC25E21E2D0B7A58008451C9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = EC25E1FE2D0B7A56008451C9;
+					};
+				};
+			};
+			buildConfigurationList = EC25E1FA2D0B7A56008451C9 /* Build configuration list for PBXProject "Belezix" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC25E1F62D0B7A56008451C9;
+			productRefGroup = EC25E2002D0B7A56008451C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC25E1FE2D0B7A56008451C9 /* Belezix */,
+				EC25E2142D0B7A58008451C9 /* BelezixTests */,
+				EC25E21E2D0B7A58008451C9 /* BelezixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC25E1FD2D0B7A56008451C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC25E20C2D0B7A58008451C9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC25E2132D0B7A58008451C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC25E21D2D0B7A58008451C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC25E1FB2D0B7A56008451C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3D0C112D10573000A75663 /* FlowCoordinator.swift in Sources */,
+				EC25E2072D0B7A56008451C9 /* ViewController.swift in Sources */,
+				EC25E2032D0B7A56008451C9 /* AppDelegate.swift in Sources */,
+				EC25E2052D0B7A56008451C9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC25E2112D0B7A58008451C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC25E21A2D0B7A58008451C9 /* BelezixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC25E21B2D0B7A58008451C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC25E2262D0B7A58008451C9 /* BelezixUITestsLaunchTests.swift in Sources */,
+				EC25E2242D0B7A58008451C9 /* BelezixUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC25E2172D0B7A58008451C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC25E1FE2D0B7A56008451C9 /* Belezix */;
+			targetProxy = EC25E2162D0B7A58008451C9 /* PBXContainerItemProxy */;
+		};
+		EC25E2212D0B7A58008451C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC25E1FE2D0B7A56008451C9 /* Belezix */;
+			targetProxy = EC25E2202D0B7A58008451C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EC25E2272D0B7A58008451C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC25E2282D0B7A58008451C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC25E22A2D0B7A58008451C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WAA59986YR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Belezix/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Belezix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC25E22B2D0B7A58008451C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WAA59986YR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Belezix/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Belezix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC25E22D2D0B7A58008451C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WAA59986YR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BelezixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Belezix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Belezix";
+			};
+			name = Debug;
+		};
+		EC25E22E2D0B7A58008451C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WAA59986YR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BelezixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Belezix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Belezix";
+			};
+			name = Release;
+		};
+		EC25E2302D0B7A58008451C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WAA59986YR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BelezixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Belezix;
+			};
+			name = Debug;
+		};
+		EC25E2312D0B7A58008451C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WAA59986YR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BelezixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Belezix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC25E1FA2D0B7A56008451C9 /* Build configuration list for PBXProject "Belezix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC25E2272D0B7A58008451C9 /* Debug */,
+				EC25E2282D0B7A58008451C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC25E2292D0B7A58008451C9 /* Build configuration list for PBXNativeTarget "Belezix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC25E22A2D0B7A58008451C9 /* Debug */,
+				EC25E22B2D0B7A58008451C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC25E22C2D0B7A58008451C9 /* Build configuration list for PBXNativeTarget "BelezixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC25E22D2D0B7A58008451C9 /* Debug */,
+				EC25E22E2D0B7A58008451C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC25E22F2D0B7A58008451C9 /* Build configuration list for PBXNativeTarget "BelezixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC25E2302D0B7A58008451C9 /* Debug */,
+				EC25E2312D0B7A58008451C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC25E1F72D0B7A56008451C9 /* Project object */;
+}
