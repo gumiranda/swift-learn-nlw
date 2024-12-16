@@ -9,14 +9,14 @@ import Foundation
 import UIKit
 
 class FlowCoordinator {
-    private var navigationController: UINavigationController
+    private var navigationController: UINavigationController?
     
-    public init(){
+    public init() {
     }
     
     func start() -> UINavigationController? {
      let startViewController = UIViewController()
-     startViewController.view.backgroundColor = .red
+     startViewController.view.backgroundColor = .blue
         
      self.navigationController = UINavigationController(rootViewController: startViewController)
      
