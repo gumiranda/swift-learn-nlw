@@ -101,13 +101,21 @@ class PlaceTableViewCell: UITableViewCell {
             descriptionLabel.leadingAnchor.constraint(equalTo: itemImageView.trailingAnchor,constant: 8),
             descriptionLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor,constant: -8),
             
-            ticketIcon.leadingAnchor.constraint(equalTo: itemImageView.trailingAnchor, constant:8),
+            ticketIcon.leadingAnchor.constraint(equalTo: itemImageView.trailingAnchor, constant: 8),
             ticketIcon.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -8),
             ticketIcon.widthAnchor.constraint(equalToConstant: 13),
-            ticketIcon.heightAnchor.constraint(equalToConstant: 13),
-
-
+            ticketIcon.heightAnchor.constraint(equalToConstant: 11),
+            
+            ticketLabel.centerYAnchor.constraint(equalTo: ticketIcon.centerYAnchor),
+            ticketLabel.leadingAnchor.constraint(equalTo: ticketIcon.trailingAnchor,constant: 4),
         ])
+    }
+    
+    func configure(with place: Place){
+        itemImageView.image = UIImage(named: place.imageName)
+        titleLabel.text = place.title
+        descriptionLabel.text = place.description
+        ticketLabel.text = "cupons disponíveis"
     }
     
 }
