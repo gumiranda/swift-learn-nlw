@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class PlaceTableViewCell: UITableViewCell {
-    static let identifier = "PlaceTableCell"
+    static let identifier = "PlaceTableViewCell"
     
     let itemImageView: UIImageView = {
         let imageView = UIImageView()
