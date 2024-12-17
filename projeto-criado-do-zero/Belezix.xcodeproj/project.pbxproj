@@ -17,6 +17,9 @@
 		EC3D0C112D10573000A75663 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3D0C102D10573000A75663 /* FlowCoordinator.swift */; };
 		ECBD059A2D10C26E008D814F /* UiViewControler+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD05992D10C26E008D814F /* UiViewControler+ext.swift */; };
 		ECBD059C2D10C381008D814F /* SplashFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD059B2D10C381008D814F /* SplashFlowDelegate.swift */; };
+		ECBD059F2D10D614008D814F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD059E2D10D614008D814F /* HomeView.swift */; };
+		ECBD05A12D10D628008D814F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD05A02D10D628008D814F /* HomeViewController.swift */; };
+		ECBD05A42D10D674008D814F /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD05A32D10D674008D814F /* PlaceTableViewCell.swift */; };
 		ECF5E06A2D106609006DFA0E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E0692D106609006DFA0E /* Colors.swift */; };
 		ECF5E06C2D10662F006DFA0E /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E06B2D10662F006DFA0E /* Typography.swift */; };
 		ECF5E06F2D1066AD006DFA0E /* BelezixFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E06E2D1066AD006DFA0E /* BelezixFlowController.swift */; };
@@ -59,6 +62,9 @@
 		EC3D0C102D10573000A75663 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		ECBD05992D10C26E008D814F /* UiViewControler+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewControler+ext.swift"; sourceTree = "<group>"; };
 		ECBD059B2D10C381008D814F /* SplashFlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFlowDelegate.swift; sourceTree = "<group>"; };
+		ECBD059E2D10D614008D814F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		ECBD05A02D10D628008D814F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ECBD05A32D10D674008D814F /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		ECF5E0692D106609006DFA0E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		ECF5E06B2D10662F006DFA0E /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		ECF5E06E2D1066AD006DFA0E /* BelezixFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelezixFlowController.swift; sourceTree = "<group>"; };
@@ -162,6 +168,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		ECBD059D2D10D5FF008D814F /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD05A22D10D649008D814F /* TableViewCell */,
+				ECBD059E2D10D614008D814F /* HomeView.swift */,
+				ECBD05A02D10D628008D814F /* HomeViewController.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		ECBD05A22D10D649008D814F /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD05A32D10D674008D814F /* PlaceTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		ECF5E0662D106567006DFA0E /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +225,7 @@
 		ECF5E0702D106834006DFA0E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				ECBD059D2D10D5FF008D814F /* HomeView */,
 				ECF5E0792D10AD40006DFA0E /* WelcomeView */,
 				ECF5E0712D10683A006DFA0E /* Splash */,
 			);
@@ -366,6 +391,7 @@
 				ECF5E0782D10A750006DFA0E /* TipsView.swift in Sources */,
 				EC3D0C112D10573000A75663 /* FlowCoordinator.swift in Sources */,
 				ECF5E06A2D106609006DFA0E /* Colors.swift in Sources */,
+				ECBD059F2D10D614008D814F /* HomeView.swift in Sources */,
 				EC25E2072D0B7A56008451C9 /* ViewController.swift in Sources */,
 				ECF5E06F2D1066AD006DFA0E /* BelezixFlowController.swift in Sources */,
 				EC25E2032D0B7A56008451C9 /* AppDelegate.swift in Sources */,
@@ -373,9 +399,11 @@
 				ECF5E06C2D10662F006DFA0E /* Typography.swift in Sources */,
 				EC25E2052D0B7A56008451C9 /* SceneDelegate.swift in Sources */,
 				ECF5E07D2D10B1CC006DFA0E /* WelcomeViewController.swift in Sources */,
+				ECBD05A12D10D628008D814F /* HomeViewController.swift in Sources */,
 				ECBD059A2D10C26E008D814F /* UiViewControler+ext.swift in Sources */,
 				ECF5E0732D10684F006DFA0E /* SplashViewController.swift in Sources */,
 				ECF5E0752D106892006DFA0E /* SplashView.swift in Sources */,
+				ECBD05A42D10D674008D814F /* PlaceTableViewCell.swift in Sources */,
 				ECBD059C2D10C381008D814F /* SplashFlowDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,7 +18,9 @@ class WelcomeView: UIView {
 
     private let welcomeLabel: UILabel = {
        let label = UILabel()
-       label.text = "Boas vindas ao Belezix!"
+       label.text = "Bem vindo(a) ao Belezix!"
+       label.font = Typography.titleXL
+       label.numberOfLines = 0
        label.translatesAutoresizingMaskIntoConstraints = false
        return label
     }()
@@ -26,10 +28,20 @@ class WelcomeView: UIView {
     private let descriptionLabel: UILabel = {
        let label = UILabel()
        label.text = "Conheça os melhores espaços de beleza perto de voce e garanta descontos exclusivos!"
+        label.font = Typography.titleMD
+        label.numberOfLines = 0
        label.translatesAutoresizingMaskIntoConstraints = false
        return label
     }()
     
+    private let subTextForTips: UILabel = {
+        let label = UILabel()
+        label.text = "Veja como funciona:"
+        label.font = Typography.textMD
+        label.translatesAutoresizingMaskIntoConstraints = false
+ 
+        return label
+    }()
     
     private let tipsStackView: UIStackView = {
         let stackView = UIStackView()
@@ -44,6 +56,7 @@ class WelcomeView: UIView {
         button.setTitle("Começar", for: .normal)
         button.backgroundColor = Colors.greenBase
         button.setTitleColor(Colors.gray100, for: .normal)
+        button.titleLabel?.font = Typography.action
         button.layer.cornerRadius = 10
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -59,6 +72,7 @@ class WelcomeView: UIView {
         addSubview(logoImageView)
         addSubview(welcomeLabel)
         addSubview(descriptionLabel)
+        addSubview(subTextForTips)
         addSubview(tipsStackView)
         addSubview(startButton)
         setupConstraints()
@@ -66,7 +80,7 @@ class WelcomeView: UIView {
     
     private func setupConstraints(){
         NSLayoutConstraint.activate([
-            logoImageView.topAnchor.constraint(equalTo: topAnchor, constant: 4),
+            logoImageView.topAnchor.constraint(equalTo: topAnchor, constant: 16),
             logoImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
             logoImageView.widthAnchor.constraint(equalToConstant: 48),
             logoImageView.heightAnchor.constraint(equalToConstant: 48),
@@ -77,9 +91,12 @@ class WelcomeView: UIView {
             descriptionLabel.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 12),
             descriptionLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
             descriptionLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
-
             
-            tipsStackView.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 24),
+            subTextForTips.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 32),
+            subTextForTips.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
+                        
+                        
+            tipsStackView.topAnchor.constraint(equalTo: subTextForTips.bottomAnchor, constant: 24),
             tipsStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
             tipsStackView.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -40),
 
