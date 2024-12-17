@@ -14,7 +14,6 @@
 		EC25E21A2D0B7A58008451C9 /* BelezixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25E2192D0B7A58008451C9 /* BelezixTests.swift */; };
 		EC25E2242D0B7A58008451C9 /* BelezixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25E2232D0B7A58008451C9 /* BelezixUITests.swift */; };
 		EC25E2262D0B7A58008451C9 /* BelezixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25E2252D0B7A58008451C9 /* BelezixUITestsLaunchTests.swift */; };
-		EC3D0C112D10573000A75663 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3D0C102D10573000A75663 /* FlowCoordinator.swift */; };
 		ECBD059A2D10C26E008D814F /* UiViewControler+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD05992D10C26E008D814F /* UiViewControler+ext.swift */; };
 		ECBD059C2D10C381008D814F /* SplashFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD059B2D10C381008D814F /* SplashFlowDelegate.swift */; };
 		ECBD059F2D10D614008D814F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD059E2D10D614008D814F /* HomeView.swift */; };
@@ -60,7 +59,6 @@
 		EC25E21F2D0B7A58008451C9 /* BelezixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BelezixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC25E2232D0B7A58008451C9 /* BelezixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelezixUITests.swift; sourceTree = "<group>"; };
 		EC25E2252D0B7A58008451C9 /* BelezixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelezixUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EC3D0C102D10573000A75663 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		ECBD05992D10C26E008D814F /* UiViewControler+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewControler+ext.swift"; sourceTree = "<group>"; };
 		ECBD059B2D10C381008D814F /* SplashFlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashFlowDelegate.swift; sourceTree = "<group>"; };
 		ECBD059E2D10D614008D814F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 			children = (
 				ECF5E0672D10656F006DFA0E /* Features */,
 				ECF5E0662D106567006DFA0E /* Constants */,
-				EC3D0C102D10573000A75663 /* FlowCoordinator.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -400,7 +397,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF5E0782D10A750006DFA0E /* TipsView.swift in Sources */,
-				EC3D0C112D10573000A75663 /* FlowCoordinator.swift in Sources */,
 				ECF5E06A2D106609006DFA0E /* Colors.swift in Sources */,
 				ECBD059F2D10D614008D814F /* HomeView.swift in Sources */,
 				EC25E2072D0B7A56008451C9 /* ViewController.swift in Sources */,
