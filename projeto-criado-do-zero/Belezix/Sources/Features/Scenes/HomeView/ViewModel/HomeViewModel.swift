@@ -39,12 +39,11 @@ class HomeViewModel {
                 print("Deu erro \(error)")
                 return
             }
-            
-            if let data = data {
-                print("JSON recebido: \(String(data: data, encoding: .utf8) ?? "Não foi possível converter os dados para string.")")
+            guard let data = data else {
                 completion([])
                 return
-           
+            }
+            
             do {
                 let categories = try JSONDecoder().decode([Category].self, from: data)
                 DispatchQueue.main.async {
@@ -53,8 +52,8 @@ class HomeViewModel {
             } catch let decodingError {
                 print("Erro ao decodificar categorias: \(decodingError.localizedDescription)")
                 completion([])
-             }
             }
+            
         }.resume()
     }
     
@@ -78,8 +77,8 @@ class HomeViewModel {
                 DispatchQueue.main.async {
                     self.didUpdatePlaces?()
                 }
-            } catch let decodingError {
-                print("Erro ao decodificar lugares: \(decodingError.localizedDescription)")
+            } catch {
+                print("Deu erro ao pegar places")
             }
             
         }.resume()

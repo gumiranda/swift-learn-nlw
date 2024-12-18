@@ -18,6 +18,4 @@ struct Place: Decodable {
     let phone: String
     let cover: String
     let categoryId: String
-    let imageName: String
-    let title: String
  }
