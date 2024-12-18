@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DCFD651E-E218-4562-A36C-6920389672F1"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA08EB13-9C53-4A8D-BBB2-55D420FEE3E6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Belezix/Sources/Features/Scenes/HomeView/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "defineInitialLocation()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9275EF60-98BB-4DFB-B38A-E63068869AE3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Belezix/Sources/Features/Scenes/HomeView/ViewModel/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "fetchCategories(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9275EF60-98BB-4DFB-B38A-E63068869AE3 - 731418b80a6a1aa7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Belezix.HomeViewModel.fetchCategories(completion: (Swift.Array&lt;Belezix.Category&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Belezix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gustavo/Belezix/projeto-criado-do-zero/Belezix/Sources/Features/Scenes/HomeView/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+               <Location
+                  uuid = "9275EF60-98BB-4DFB-B38A-E63068869AE3 - 731418b80a6a1aa7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Belezix.HomeViewModel.fetchCategories(completion: (Swift.Array&lt;Belezix.Category&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Belezix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gustavo/Belezix/projeto-criado-do-zero/Belezix/Sources/Features/Scenes/HomeView/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "696F88CD-2CCA-4EFE-AE70-D5DE1E6530FA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Belezix/Sources/Features/Scenes/HomeView/ViewModel/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "fetchCategories(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "696F88CD-2CCA-4EFE-AE70-D5DE1E6530FA - 8990792b31b3f83b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Belezix.HomeViewModel.fetchCategories(completion: (Swift.Array&lt;Belezix.Category&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Belezix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gustavo/Belezix/projeto-criado-do-zero/Belezix/Sources/Features/Scenes/HomeView/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58">
+               </Location>
+               <Location
+                  uuid = "696F88CD-2CCA-4EFE-AE70-D5DE1E6530FA - 731418b80a6a14d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Belezix.HomeViewModel.fetchCategories(completion: (Swift.Array&lt;Belezix.Category&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Belezix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gustavo/Belezix/projeto-criado-do-zero/Belezix/Sources/Features/Scenes/HomeView/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E364D715-652A-4FAB-8040-7D1A4C0A7DB8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Belezix/Sources/Features/Scenes/HomeView/ViewModel/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "fetchPlaces(for:userLocation:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E364D715-652A-4FAB-8040-7D1A4C0A7DB8 - 167e10ddfd539d33"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Belezix.HomeViewModel.fetchPlaces(for: Swift.String, userLocation: __C.CLLocationCoordinate2D) -&gt; ()"
+                  moduleName = "Belezix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gustavo/Belezix/projeto-criado-do-zero/Belezix/Sources/Features/Scenes/HomeView/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66">
+               </Location>
+               <Location
+                  uuid = "E364D715-652A-4FAB-8040-7D1A4C0A7DB8 - 3fc517acb0ec2956"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Belezix.HomeViewModel.fetchPlaces(for: Swift.String, userLocation: __C.CLLocationCoordinate2D) -&gt; ()"
+                  moduleName = "Belezix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gustavo/Belezix/projeto-criado-do-zero/Belezix/Sources/Features/Scenes/HomeView/ViewModel/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E785D455-654E-4974-9CE0-D84FA6AB5ED7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Belezix/Sources/Features/Scenes/HomeView/ViewModel/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "fetchCategories(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2406105F-3F2B-4B89-BD83-E499BC246A9A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Belezix/Sources/Features/Scenes/HomeView/ViewModel/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "fetchCategories(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
