@@ -153,6 +153,7 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        configureDetails()
         setupBackButton()
         self.navigationController?.navigationBar.isHidden = true
     }
@@ -220,13 +221,11 @@ class DetailsViewController: UIViewController {
             coverImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
 
             containerView.topAnchor.constraint(equalTo: coverImageView.bottomAnchor, constant: -20),
-            containerView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.4),
             containerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             containerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor,constant: 32),
-            //applyLateralConstraints(to: titleLabel)
-            
+ 
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor,constant: 12),
             
             infoTitleLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 24),
@@ -258,6 +257,7 @@ class DetailsViewController: UIViewController {
             
 
         ])
+        applyLateralConstraints(to: titleLabel)
         applyLateralConstraints(to: descriptionLabel)
         applyLateralConstraints(to: infoStackView)
         applyLateralConstraints(to: divider)
@@ -317,7 +317,7 @@ class DetailsViewController: UIViewController {
                         self.coverImageView.image = image
                     }
                 }
-            }
+            }.resume()
         }
     }
     

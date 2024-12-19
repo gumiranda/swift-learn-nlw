@@ -110,10 +110,10 @@ class HomeView: UIView {
             mapView.trailingAnchor.constraint(equalTo: trailingAnchor),
             mapView.heightAnchor.constraint(equalTo: self.heightAnchor,multiplier: 0.65),
             
-            filterScrollView.topAnchor.constraint(equalTo: topAnchor,constant: 48),
+            filterScrollView.topAnchor.constraint(equalTo: topAnchor,constant: 80),
             filterScrollView.leadingAnchor.constraint(equalTo: leadingAnchor,constant:24),
             filterScrollView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            filterScrollView.heightAnchor.constraint(equalToConstant: 86 ),
+            filterScrollView.heightAnchor.constraint(equalTo: filterStackView.heightAnchor),
 
             //containerView.topAnchor.constraint(equalTo: mapView.bottomAnchor),
             containerView.leadingAnchor.constraint(equalTo: leadingAnchor),
@@ -125,7 +125,7 @@ class HomeView: UIView {
             filterStackView.bottomAnchor.constraint(equalTo: filterScrollView.bottomAnchor),
             filterStackView.leadingAnchor.constraint(equalTo: filterScrollView.leadingAnchor),
             filterStackView.trailingAnchor.constraint(equalTo: filterScrollView.trailingAnchor),
-            filterStackView.heightAnchor.constraint(equalTo: filterScrollView.heightAnchor),
+            filterStackView.heightAnchor.constraint(equalToConstant: 45),
 
         ])
         
@@ -172,6 +172,9 @@ class HomeView: UIView {
             let button = createFilterButton(title: category.name, iconName: iconName)
             button.tag = index
             button.addTarget(self, action: #selector(filterButtonTapped(_:)),for: .touchUpInside)
+            if category.name == "Alimentação" {
+                updateButtonSelection(button: button)
+            }
             filterStackView.addArrangedSubview(button)
         }
     }
@@ -189,8 +192,8 @@ class HomeView: UIView {
         button.heightAnchor.constraint(equalToConstant: 36).isActive = true
         button.imageView?.contentMode = .scaleAspectFit
         button.imageView?.heightAnchor.constraint(equalToConstant: 13).isActive = true
-        button.imageEdgeInsets = UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 8)
-        button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 0)
+       // button.imageEdgeInsets = UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 8)
+       // button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 0)
         
         filterStackView.isLayoutMarginsRelativeArrangement = true
         filterStackView.layoutMargins = UIEdgeInsets(top: 2, left: 0, bottom: 2, right: 0)
