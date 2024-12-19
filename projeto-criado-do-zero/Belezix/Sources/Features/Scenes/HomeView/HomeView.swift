@@ -93,7 +93,14 @@ class HomeView: UIView {
         containerView.addSubview(descriptionLabel)
         containerView.addSubview(placesTableView)
         
+        setupPanGesture()
+        
         setupConstraints()
+    }
+    func setupPanGesture(){
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_: )))
+        containerView.addGestureRecognizer(panGesture)
+        
     }
     
     private func setupConstraints() {
@@ -215,5 +222,37 @@ class HomeView: UIView {
         DispatchQueue.main.async {
             self.placesTableView.reloadData()
         }
+    }
+    
+    @objc
+    private func handlePanGesture(_ gesture: UIPanGestureRecognizer){
+        let translation = gesture.translation(in: self)
+        let velocity = gesture.velocity(in: self)
+        
+        switch gesture.state {
+        case .changed:
+            let newConstant = containerTopConstraint.constant + translation.y
+            if newConstant <= 0 && newConstant >= frame.height * 0.5 {
+                containerTopConstraint.constant = newConstant
+                gesture.setTranslation(.zero, in: self)
+            }
+        case .ended:
+            let halfScreenHeight = -frame.height * 0.25
+            let finalPosition:CGFloat
+            
+            if velocity.y > 0 {
+                finalPosition = 0
+            } else {
+                finalPosition = halfScreenHeight
+            }
+            UIView.animate(withDuration: 0.3, animations: {
+                self.containerTopConstraint.constant = finalPosition
+                self.layoutIfNeeded()
+            })
+        default:
+            break;
+        }
+        
+        
     }
 }

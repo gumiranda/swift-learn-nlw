@@ -18,7 +18,7 @@ class BelezixFlowController {
     func start() -> UINavigationController? {
         let contentView = SplashView()
        // let startViewController = SplashViewController(contentView: contentView,delegate: self)
-        let startViewController = HomeViewController()
+        let startViewController = DetailsViewController()
         self.navigationController = UINavigationController(rootViewController: startViewController)
         
         return navigationController

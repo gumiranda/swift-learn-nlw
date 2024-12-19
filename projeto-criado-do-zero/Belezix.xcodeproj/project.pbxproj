@@ -23,6 +23,7 @@
 		ECBD05A92D120064008D814F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD05A82D120064008D814F /* Category.swift */; };
 		ECBD05AC2D1200B1008D814F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD05AB2D1200B1008D814F /* HomeViewModel.swift */; };
 		ECBD05AE2D12F104008D814F /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD05AD2D12F104008D814F /* PlaceAnnotation.swift */; };
+		ECBD05B12D141FC2008D814F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD05B02D141FC2008D814F /* DetailsViewController.swift */; };
 		ECF5E06A2D106609006DFA0E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E0692D106609006DFA0E /* Colors.swift */; };
 		ECF5E06C2D10662F006DFA0E /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E06B2D10662F006DFA0E /* Typography.swift */; };
 		ECF5E06F2D1066AD006DFA0E /* BelezixFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5E06E2D1066AD006DFA0E /* BelezixFlowController.swift */; };
@@ -71,6 +72,7 @@
 		ECBD05A82D120064008D814F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		ECBD05AB2D1200B1008D814F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		ECBD05AD2D12F104008D814F /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		ECBD05B02D141FC2008D814F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		ECF5E0692D106609006DFA0E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		ECF5E06B2D10662F006DFA0E /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		ECF5E06E2D1066AD006DFA0E /* BelezixFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelezixFlowController.swift; sourceTree = "<group>"; };
@@ -210,6 +212,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		ECBD05AF2D141FA6008D814F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD05B02D141FC2008D814F /* DetailsViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		ECF5E0662D106567006DFA0E /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +260,7 @@
 		ECF5E0702D106834006DFA0E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				ECBD05AF2D141FA6008D814F /* Detail */,
 				ECBD059D2D10D5FF008D814F /* HomeView */,
 				ECF5E0792D10AD40006DFA0E /* WelcomeView */,
 				ECF5E0712D10683A006DFA0E /* Splash */,
@@ -424,6 +435,7 @@
 				ECBD05A72D11BA3F008D814F /* PlaceModel.swift in Sources */,
 				ECF5E07B2D10AD50006DFA0E /* WelcomeView.swift in Sources */,
 				ECF5E06C2D10662F006DFA0E /* Typography.swift in Sources */,
+				ECBD05B12D141FC2008D814F /* DetailsViewController.swift in Sources */,
 				EC25E2052D0B7A56008451C9 /* SceneDelegate.swift in Sources */,
 				ECBD05AE2D12F104008D814F /* PlaceAnnotation.swift in Sources */,
 				ECF5E07D2D10B1CC006DFA0E /* WelcomeViewController.swift in Sources */,
