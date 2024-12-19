@@ -89,7 +89,7 @@ class DetailsViewController: UIViewController {
         
         let stackView = UIStackView(arrangedSubviews: [iconImageView])
         stackView.axis = .horizontal
-        stackView.backgroundColor = Colors.greenLight
+        stackView.backgroundColor = Colors.gray200
         stackView.layer.cornerRadius = 8
         stackView.spacing = 4
         stackView.alignment = .center
@@ -221,10 +221,50 @@ class DetailsViewController: UIViewController {
             containerView.topAnchor.constraint(equalTo: coverImageView.bottomAnchor, constant: -20),
             containerView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.4),
             containerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            containerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor,constant: 32),
             //applyLateralConstraints(to: titleLabel)
+            
+            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor,constant: 12),
+            
+            infoTitleLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 24),
+            infoTitleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor,constant: 24),
+            
+            infoStackView.topAnchor.constraint(equalTo: infoTitleLabel.bottomAnchor, constant: 12),
+            
+            divider.topAnchor.constraint(equalTo: infoStackView.bottomAnchor, constant: 16),
+            divider.heightAnchor.constraint(equalToConstant: 1),
+            
+            regulationTitleLabel.topAnchor.constraint(equalTo: divider.bottomAnchor, constant: 16),
+            regulationTitleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor,constant: 24),
+            
+            regulationLabel.topAnchor.constraint(equalTo: regulationTitleLabel.bottomAnchor, constant: 12),
+
+            
+            divider2.topAnchor.constraint(equalTo: regulationLabel.bottomAnchor, constant: 16),
+            divider2.heightAnchor.constraint(equalToConstant: 1),
+            
+            couponTitleLabel.topAnchor.constraint(equalTo: divider2.bottomAnchor, constant: 16),
+            couponTitleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 24),
+            
+            couponStackView.topAnchor.constraint(equalTo: couponTitleLabel.bottomAnchor, constant: 12),
+            couponStackView.heightAnchor.constraint(equalToConstant: 40),
+
+            qrCodeButton.heightAnchor.constraint(equalToConstant: 44),
+            qrCodeButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor,constant: -32),
+            
+            
+
         ])
+        applyLateralConstraints(to: descriptionLabel)
+        applyLateralConstraints(to: infoStackView)
+        applyLateralConstraints(to: divider)
+        applyLateralConstraints(to: divider2)
+        applyLateralConstraints(to: regulationLabel)
+        applyLateralConstraints(to: couponStackView)
+        applyLateralConstraints(to: qrCodeButton)
+
     }
     
     private func applyLateralConstraints(to view: UIView){
