@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 class WelcomeView: UIView {
+    var didTapButton:(()->Void?)?
+    
     private let logoImageView: UIImageView = {
         let image = UIImageView(image: UIImage(named: "logo"))
         image.contentMode = .scaleAspectFit
@@ -58,6 +60,7 @@ class WelcomeView: UIView {
         button.setTitleColor(Colors.gray100, for: .normal)
         button.titleLabel?.font = Typography.action
         button.layer.cornerRadius = 10
+        button.addTarget(self, action: #selector(didTap), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -105,6 +108,10 @@ class WelcomeView: UIView {
             startButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
             startButton.heightAnchor.constraint(equalToConstant: 56)
         ])
+    }
+    
+    @objc private func didTap(){
+        didTapButton?()
     }
     
     private func setupTips(){

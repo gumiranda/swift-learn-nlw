@@ -153,6 +153,7 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupBackButton()
         self.navigationController?.navigationBar.isHidden = true
     }
     
@@ -272,5 +273,70 @@ class DetailsViewController: UIViewController {
             view.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 24),
             view.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -24),
         ])
+    }
+    
+    private func setupBackButton(){
+        view.addSubview(backButton)
+        backButton.translatesAutoresizingMaskIntoConstraints = false
+        backButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+    
+        NSLayoutConstraint.activate([
+            backButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            backButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            backButton.heightAnchor.constraint(equalToConstant: 40),
+            backButton.widthAnchor.constraint(equalToConstant: 40)
+        ])
+    }
+    
+    @objc
+    private func didTapButton(){
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    private func configureDetails(){
+        guard let place = place else { return }
+        titleLabel.text = place.name
+        descriptionLabel.text = place.description
+        
+        infoStackView.addArrangedSubview(createInfoRow(iconName: "ticket", text: "\(place.coupons) cupons disponíveis"))
+        infoStackView.addArrangedSubview(createInfoRow(iconName: "mapIcon", text: place.address))
+        infoStackView.addArrangedSubview(createInfoRow(iconName: "phone", text: place.phone))
+        
+        let regulationText = """
+        • Válido apenas para consumo no local
+        • Disponível até 31/12/2024
+        """
+        regulationLabel.text = regulationText
+        
+        couponCodeLabel.text = place.id
+        if let url = URL(string: place.cover) {
+            URLSession.shared.dataTask(with: url) {
+                data, _, _ in
+                if let data = data, let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self.coverImageView.image = image
+                    }
+                }
+            }
+        }
+    }
+    
+    private func createInfoRow(iconName: String,text: String) -> UIStackView {
+        let iconImageView = UIImageView(image: UIImage(named: iconName))
+        iconImageView.contentMode = .scaleAspectFill
+        iconImageView.tintColor = Colors.gray500
+        iconImageView.translatesAutoresizingMaskIntoConstraints = false
+        iconImageView.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        iconImageView.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        
+        let label = UILabel()
+        label.text = text
+        label.font = Typography.textSM
+        label.textColor = Colors.gray600
+        
+        let stackView = UIStackView(arrangedSubviews: [iconImageView,label])
+        stackView.axis = .horizontal
+        stackView.spacing = 8
+        return stackView
     }
 }
